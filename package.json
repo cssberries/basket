@@ -1,0 +1,33 @@
+{
+  "name": "basket",
+  "version": "1.0.0",
+  "description": "design system",
+  "main": "index.html",
+  "dependencies": {
+    "color": "^3.1.0",
+    "tailwindcss": "^0.7.3"
+  },
+  "devDependencies": {
+    "cssberries-colors": "^2.1.0",
+    "modular-values": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "./node_modules/.bin/tailwind build main.css -c ./config.js  -o ./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssberries/basket.git"
+  },
+  "keywords": [
+    "css",
+    "design",
+    "system"
+  ],
+  "author": "Yevgeniy Belov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cssberries/basket/issues"
+  },
+  "homepage": "https://github.com/cssberries/basket#readme"
+}
