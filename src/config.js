@@ -43,9 +43,6 @@ let defaultConfig = require("tailwindcss/defaultConfig")();
 */
 var modvalues = require("modular-values");
 var cssberriesColors = require("cssberries-colors");
-// var cssberriesColors = require("./test.js");
-// console.log(cssberriesColors);
-cssberriesColors.test();
 let colors = cssberriesColors.generateColors(12,4);
 
 module.exports = {
