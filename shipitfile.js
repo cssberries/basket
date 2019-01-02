@@ -1,16 +1,20 @@
 module.exports = shipit => {
-  // Load shipit-deploy tasks
-  require('shipit-deploy')(shipit)
+    // Load shipit-deploy tasks
+    require('shipit-deploy')(shipit)
 
-  shipit.initConfig({
-    default: {
-      deployTo: '/var/www/cssberries/html',
-      key: '/Users/belov/.ssh/id_rsa.pub',
-    //   repositoryUrl: 'https://github.com/user/super-project.git',
-    workspace: '/Users/belov/dev/basket/dist'
-    },
-    staging: {
-      servers: 'ugen@162.243.168.238',
-    },
-  })
+    shipit.initConfig({
+        default: {
+            key:  '~/.ssh/id_rsa',
+            servers: [{
+                host: '162.243.168.238',
+                user: 'root',
+            }],
+            // dirToCopy: '/dist',
+            shallowClone: true,
+            branch: 'master',
+            workspace: '/var/www/cssberries/tmp',
+            deployTo: '/var/www/cssberries/html',
+            repositoryUrl: 'https://github.com/cssberries/basket'
+        }
+    })
 }
