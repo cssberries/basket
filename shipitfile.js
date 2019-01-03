@@ -1,5 +1,4 @@
 module.exports = shipit => {
-    // Load shipit-deploy tasks
     require('shipit-deploy')(shipit)
 
     shipit.initConfig({
@@ -7,11 +6,12 @@ module.exports = shipit => {
             key:  '~/.ssh/id_rsa',
             servers: [{
                 host: '162.243.168.238',
-                user: 'root',
+                user: 'ugen',
             }],
-            // dirToCopy: '/dist',
-            shallowClone: true,
+            // verboseSSHLevel: 3, 
+            // shallowClone: false,
             branch: 'master',
+            // keepReleases: 1,
             workspace: '/var/www/cssberries/tmp',
             deployTo: '/var/www/cssberries/html',
             repositoryUrl: 'https://github.com/cssberries/basket'
