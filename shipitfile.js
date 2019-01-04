@@ -8,10 +8,7 @@ module.exports = shipit => {
                 host: '162.243.168.238',
                 user: 'ugen',
             }],
-            // verboseSSHLevel: 3, 
-            // shallowClone: false,
             branch: 'master',
-            // keepReleases: 1,
             workspace: '/var/www/cssberries/tmp',
             deployTo: '/var/www/cssberries/html',
             repositoryUrl: 'https://github.com/cssberries/basket'
