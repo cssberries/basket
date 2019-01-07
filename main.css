@@ -1,3 +1,24 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+/* .text-color-strong{color: var(--text-color-strong)} */
+
+:root {
+    --text-color-weakest: rgba(0, 0, 0, .4);
+    --text-color-weak: rgba(0, 0, 0, .55);
+    --text-color-medium: rgba(0, 0, 0, .7);
+    --text-color-strong: rgba(0, 0, 0, .85);
+    --text-color-strongest: rgba(0, 0, 0, 1);
+
+    .dark-theme {
+        --text-color-weakest: rgba(255, 255, 255, .4);
+        --text-color-weak: rgba(255, 255, 255, .55);
+        --text-color-medium: rgba(255, 255, 255, .7);
+        --text-color-strong: rgba(255, 255, 255, .85);
+        --text-color-strongest: rgba(255, 255, 255, 1);
+    }
+}
+
+html {
+    @apply .text-color-weakest;
+}
